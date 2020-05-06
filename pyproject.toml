@@ -7,6 +7,7 @@ authors = ["Patrick <patrick.pwall@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 django = "^3.0.6"
+dynaconf = {version = "^2.2.3", extras = ["yaml"]}
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

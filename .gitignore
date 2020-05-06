@@ -321,3 +321,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+
+# Ignore dynaconf secret files
+.secrets.*
+
+static
