@@ -19,6 +19,7 @@ class Usuario(ModelMixin, AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(verbose_name=_("E-mail"), unique=True)
     name = models.CharField(verbose_name=_("Nome"), max_length=150)
     is_staff = models.BooleanField(verbose_name=_("Faz parte do time?"), default=False)
+    is_active = models.BooleanField(verbose_name=_("Está ativo?"), default=False)
 
     def __str__(self):
         return self.name
